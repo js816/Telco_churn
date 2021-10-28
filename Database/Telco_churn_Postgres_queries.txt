@@ -1,0 +1,29 @@
+-- Creating the table to hold the customer loyalty data
+CREATE TABLE customer_loyalty_data (
+	loyalty_id INT NOT NULL,
+	customer_id VARCHAR NOT NULL,
+	senior_citizen TEXT NOT NULL,
+	partner TEXT NOT NULL,
+	dependendents TEXT NOT NULL,
+	tenure INT NOT NULL,
+	phone_service TEXT NOT NULL,
+	multiple_lines TEXT NOT NULL,
+	internet_service TEXT NOT NULL,
+	online_security TEXT NOT NULL,
+	online_backup TEXT NOT NULL,
+	device_protection TEXT NOT NULL,
+	tech_support TEXT NOT NULL,
+	streaming_tv TEXT NOT NULL,
+	streaming_movies TEXT NOT NULL,
+	contract TEXT NOT NULL,
+	paperless_billing TEXT NOT NULL,
+	payment_method TEXT NOT NULL,
+	monthly_charges DEC NOT NULL,
+	total_charges DEC,
+	churn TEXT NOT NULL,
+	PRIMARY KEY (customer_id)
+);
+
+-- Verifying import was successfull
+SELECT *
+FROM customer_loyalty_data;
